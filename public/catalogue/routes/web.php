@@ -12,6 +12,10 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/categ', 'App\Http\Controllers\listeMediasController@getcategory');
+
+
+
 Route::get('/auth', function () {
     return view('auth');
 });
