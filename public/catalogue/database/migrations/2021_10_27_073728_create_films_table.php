@@ -19,6 +19,7 @@ class CreateFilmsTable extends Migration
             $table->String('name');
             $table->String('director');
             $table->String('path');
+            
             });
     }
 
