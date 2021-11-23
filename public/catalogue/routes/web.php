@@ -30,6 +30,7 @@ Route::get('profile', function () {
 Route::get('tableau', function () {
     return view('tableau'); })->name('tableau');
 
+<<<<<<< HEAD
 Route::get('/history', function () {
     return view('historique'); })->name('history');
 
@@ -37,6 +38,8 @@ Route::get('admins', function () {
     return view('admins'); })->name('admins');
 
 
+=======
+>>>>>>> 534038f9ee6bed642234419897fddce2c77c7be1
 /*Route::get('/', function () {
     return view('welcome');
 });
@@ -82,7 +85,11 @@ Route::get('film/{film}', 'App\Http\controllers\listeMediasController@getFilmByI
 
 Route::put('formuUp/film/{id}', 'App\Http\controllers\listeMediasController@updateFilm')->name('updatefilm');
 
+<<<<<<< HEAD
 Route::delete('film/{film}', 'App\Http\controllers\listeMediasController@destroy')->name('films.destroy');
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
+=======
+Route::delete('film/{film}', 'App\Http\controllers\listeMediasController@destroy')->name('films.destroy');
+>>>>>>> 534038f9ee6bed642234419897fddce2c77c7be1
